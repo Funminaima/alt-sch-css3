@@ -1,0 +1,188 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+nav {
+  background-color: #fbe4d1;
+  color: #ced1fe;
+  width: 100%;
+}
+nav a {
+  display: inline-block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #485055;
+  margin-inline: 5px;
+  border-radius: 30px;
+  width: 70px;
+  text-align: center;
+}
+nav a:hover {
+  color: #6a6ff5;
+}
+nav .active {
+  background-color: #6a6ff5;
+  color: white;
+}
+.content-about {
+  padding: 20px 30px;
+}
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+
+  height: 100vh;
+}
+.content {
+  /* width: 100%; */
+  padding: 20px 30px;
+  background-color: #fef6ee;
+  position: relative;
+  /* height: 100vh; */
+}
+.svg1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+}
+.svg2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+}
+.center-content {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  /* margin: 0 auto; */
+  left: 5%;
+  top: 10%;
+}
+.center-content h1 {
+  font-size: 2.1875rem;
+  line-height: 40px;
+  font-family: AlmarenaDisplayBold, sans-serif;
+  font-size: 3.1875rem;
+  line-height: 72px;
+
+  margin-bottom: 25px;
+}
+.center-content p {
+  font-family: AlmarenaDisplayLight, sans-serif;
+  font-size: 1.375rem;
+  line-height: 32px;
+  text-align: center;
+  margin-top: 0;
+}
+.form {
+  background-color: white;
+  padding: 10px 80px;
+  align-self: center;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.logo2 {
+  text-align: center;
+  margin-block: 1rem;
+  display: none;
+}
+.card {
+  padding: 40px 20px;
+  background-color: #fcfcfc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  min-height: 90vh;
+}
+.card p {
+  font-size: 1rem;
+  font-family: AlmarenaDisplayLight, sans-serif;
+  color: rgb(123, 123, 123);
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.card h2 {
+  font-size: 2rem;
+  font-family: AlmarenaDisplayBold, sans-serif;
+  color: rgb(11, 30, 75);
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.d-flex {
+  display: flex;
+  gap: 10px;
+}
+input[type="text"],
+select,
+input[type="submit"],
+input[type="date"] {
+  /* padding: 10px 0px 0px 10px; */
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  display: inline-block;
+  margin-block: 5px;
+  border-radius: 4px;
+  border: 1px solid #ecedef;
+}
+input[type="submit"] {
+  background-color: #6a6ff5;
+  color: white;
+}
+.form-item {
+  width: 100%;
+  margin-block: 10px;
+}
+.form-item span {
+  color: red;
+  margin-left: 5px;
+}
+.terms h4 {
+  font-size: 1rem;
+  font-family: AlmarenaDisplayLight, sans-serif;
+  color: rgb(123, 123, 123);
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.terms a {
+  text-decoration: none;
+  color: #6a6ff5;
+  box-sizing: border-box;
+}
+footer {
+  position: relative;
+  top: 30%;
+  left: 5%;
+  text-align: center;
+}
+.footer-icons i {
+  margin-left: 10px;
+}
+footer p {
+  font-size: 0.875rem;
+  font-family: Almarena, sans-serif;
+  line-height: 30px;
+  letter-spacing: -0.01rem;
+  color: #aaa;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    display: none;
+  }
+  .page-container {
+    display: block;
+  }
+  .logo2 {
+    text-align: center;
+    margin-block: 1rem;
+    display: block;
+  }
+}
